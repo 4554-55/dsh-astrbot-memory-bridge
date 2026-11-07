@@ -1,0 +1,22 @@
+{
+  "name": "dsh-astrbot-memory-bridge",
+  "version": "0.1.0",
+  "description": "DSH plugin bridge for ingesting AstrBot multi-platform chat memory into a memory engine.",
+  "license": "MIT",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

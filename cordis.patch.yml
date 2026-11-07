@@ -1,0 +1,18 @@
+insert:
+  - id: astrbot-memory-bridge
+    name: dsh-astrbot-memory-bridge
+    config:
+      enabled: true
+      ingestPath: /api/astrbot-memory/ingest
+      recallPath: /api/astrbot-memory/recall
+      maxBodyBytes: 1048576
+      defaultRecallLimit: 5
+      saveAssistantMessages: true
+      autoExtract: true
+      crossPlatformIdentity: false
+      engine:
+        mode: http
+        baseUrl: http://127.0.0.1:8787
+        ingestPath: /memory/ingest
+        recallPath: /memory/recall
+        apiKeyEnv: DSH_MEMORY_ENGINE_API_KEY
