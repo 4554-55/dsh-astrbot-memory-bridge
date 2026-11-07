@@ -240,6 +240,3 @@ export function apply(ctx, config = {}) {
     `[astrbot-memory-bridge] loaded; ingest=${cfg.ingestPath}, recall=${cfg.recallPath}`
   );
 }
-
-export const name = 'dsh-astrbot-memory-bridge';
-export const version = '0.1.0';
